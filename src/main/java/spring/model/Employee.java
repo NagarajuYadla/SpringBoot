@@ -2,6 +2,7 @@ package spring.model;
 
 import java.math.BigDecimal;
 
+import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -19,10 +20,10 @@ public class Employee {
 	
 	private Integer id;
 
-	// @Column(name="empname")
+	 @Column(name="empname")
 	private String name;
 
-	// @Column(name="empsalary")
+	@Column(name="empsalary")
 	private BigDecimal salary;
 
 	public Integer getId() {
